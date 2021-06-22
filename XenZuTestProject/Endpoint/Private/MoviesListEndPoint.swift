@@ -14,7 +14,7 @@ extension Endpoint where Kind == EndpointKinds.Private,
 {
     static func moviesList(page: Int) -> Self {
         Endpoint(
-            path: "movie",
+            path: "discover/movie",
             queryItems: [.init(name: "page", value: String(page))]
         )
     }

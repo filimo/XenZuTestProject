@@ -17,7 +17,7 @@ extension Endpoint {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.themoviedb.org"
-        components.path = "/3/discover/" + path
+        components.path = "/3/" + path
         components.queryItems = queryItems.isEmpty ? nil : queryItems
         
         Kind.prepare(&components, with: data)

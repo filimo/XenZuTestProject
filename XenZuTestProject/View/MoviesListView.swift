@@ -11,14 +11,14 @@ import SwiftUI
 
 struct MoviesListView: View {
     @ObservedObject var store = MoviesListStore.shared
-    
+
     let items: [MovieItem]
 
     var body: some View {
         ScrollView {
             LazyVStack {
                 ForEach(items, id: \.id) { item in
-                    NavigationLink(destination: MovieDetailView(item: item.id)) {
+                    NavigationLink(destination: LazyView { MovieDetailView(id: item.id) }) {
                         itemView(item: item)
                     }
                     .onAppear {
@@ -30,10 +30,10 @@ struct MoviesListView: View {
             }
         }
     }
-    
+
     private func itemView(item: MovieItem) -> some View {
         HStack {
-            posterView(posterPath: item.posterPath)
+            ContentView.posterView(posterPath: item.posterPath)
                 .frame(width: 100, height: 150)
 
             Spacer()
@@ -45,7 +45,7 @@ struct MoviesListView: View {
                 }
 
                 HStack {
-                    Text("\(item.releaseDate, formatter: itemFormatter)")
+                    Text("\(item.releaseDate, formatter: DateFormatter.yearFormatter)")
                         .padding(.top, 5)
                     Spacer()
                 }
@@ -54,28 +54,7 @@ struct MoviesListView: View {
         }
         .foregroundColor(.black)
     }
-
-    @ViewBuilder
-    private func posterView(posterPath: String) -> some View {
-        if let url = URL(string: "https://www.themoviedb.org/t/p/w220_and_h330_face/\(posterPath)") {
-            AsyncImage(
-                url: url,
-                placeholder:
-                Rectangle().foregroundColor(.gray),
-
-                configuration: { $0.resizable() }
-            )
-        } else {
-            Rectangle().foregroundColor(.gray)
-        }
-    }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.setLocalizedDateFormatFromTemplate("yyyy")
-    return formatter
-}()
 
 struct MoviesListView_Previews: PreviewProvider {
     static var previews: some View {

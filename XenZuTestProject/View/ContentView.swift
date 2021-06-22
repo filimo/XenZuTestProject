@@ -39,6 +39,21 @@ struct ContentView: View {
             store.nextFetchMoviesList()
         }
     }
+    
+    @ViewBuilder
+    static func posterView(posterPath: String) -> some View {
+        if let url = URL(string: "https://www.themoviedb.org/t/p/w220_and_h330_face/\(posterPath)") {
+            AsyncImage(
+                url: url,
+                placeholder:
+                Rectangle().foregroundColor(.gray),
+
+                configuration: { $0.resizable() }
+            )
+        } else {
+            Rectangle().foregroundColor(.gray)
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

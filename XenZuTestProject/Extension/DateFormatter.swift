@@ -16,4 +16,10 @@ extension DateFormatter {
         
         return dateFormatter
     }()
+    
+    static let yearFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.setLocalizedDateFormatFromTemplate("yyyy")
+        return formatter
+    }()
 }
