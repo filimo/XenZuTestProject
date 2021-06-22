@@ -8,7 +8,9 @@
 import Foundation
 
 struct MovieItem: Decodable, Identifiable {
-    let id: Int
+    typealias MovieID = Int
+    
+    let id: MovieID
     let originalTitle: String
     let releaseDate: Date
     let posterPath: String
@@ -26,8 +28,8 @@ struct MovieItem: Decodable, Identifiable {
         id = try values.decode(Int.self, forKey: .id)
         originalTitle = try values.decode(String.self, forKey: .originalTitle)
         
-        let releaseDate = try values.decode(String.self, forKey: .releaseDate)
-        self.releaseDate = DateFormatter.jsonDateFormater.date(from: releaseDate) ?? Date()
+        let releaseDate = try? values.decode(String.self, forKey: .releaseDate)
+        self.releaseDate = DateFormatter.jsonDateFormater.date(from: releaseDate ?? "") ?? Date()
         
         posterPath = try values.decode(String.self, forKey: .posterPath)
     }

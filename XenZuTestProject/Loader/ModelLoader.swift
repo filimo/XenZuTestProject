@@ -13,6 +13,7 @@ class ModelLoader<Model: Decodable>: ObservableObject {
         case idle
         case loading
         case loaded(Model)
+        case finished
         case failed(Error)
     }
 
@@ -30,11 +31,10 @@ class ModelLoader<Model: Decodable>: ObservableObject {
         self.decoder = decoder
     }
 
-    func load() {
+    func load() -> AnyPublisher<ModelLoader<Model>.State, Never> {
             state = .loading
 
-            cancellable =
-                session
+            return session
                 .dataTaskPublisher(for: urlRequest)
                 .map(\.data)
                 .decode(type: Model.self, decoder: decoder)
@@ -42,7 +42,6 @@ class ModelLoader<Model: Decodable>: ObservableObject {
                 .catch { error in
                     Just(.failed(error))
                 }
-                .receive(on: DispatchQueue.main)
-                .weakAssign(to: \.state, on: self)
+                .eraseToAnyPublisher()
         }
 }

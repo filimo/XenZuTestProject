@@ -7,40 +7,54 @@
 
 import SwiftUI
 
-
 // https://www.themoviedb.org/t/p/w220_and_h330_face/z8CExJekGrEThbpMXAmCFvvgoJR.jpg
 
 struct MoviesListView: View {
-    let items: MoviesList
+    @ObservedObject var store = MoviesListStore.shared
     
+    let items: [MovieItem]
+
     var body: some View {
         ScrollView {
-            ForEach(items.results, id: \.id) { item in
-                HStack {
-                    posterView(posterPath: item.posterPath)
-                        .frame(width: 100, height: 150)
-
-                    Spacer()
-
-                    VStack {
-                        HStack {
-                            Text("\(item.originalTitle)")
-                            Spacer()
+            LazyVStack {
+                ForEach(items, id: \.id) { item in
+                    NavigationLink(destination: MovieDetailView(item: item.id)) {
+                        itemView(item: item)
+                    }
+                    .onAppear {
+                        if items.last?.id == item.id {
+                            store.nextFetchMoviesList()
                         }
-
-                        HStack {
-                            Text("\(item.releaseDate, formatter: itemFormatter)")
-                                .padding(.top, 5)
-                            Spacer()
-                        }
-                        Spacer()
                     }
                 }
             }
         }
     }
     
-    
+    private func itemView(item: MovieItem) -> some View {
+        HStack {
+            posterView(posterPath: item.posterPath)
+                .frame(width: 100, height: 150)
+
+            Spacer()
+
+            VStack {
+                HStack {
+                    Text("\(item.originalTitle)")
+                    Spacer()
+                }
+
+                HStack {
+                    Text("\(item.releaseDate, formatter: itemFormatter)")
+                        .padding(.top, 5)
+                    Spacer()
+                }
+                Spacer()
+            }
+        }
+        .foregroundColor(.black)
+    }
+
     @ViewBuilder
     private func posterView(posterPath: String) -> some View {
         if let url = URL(string: "https://www.themoviedb.org/t/p/w220_and_h330_face/\(posterPath)") {
@@ -56,7 +70,6 @@ struct MoviesListView: View {
         }
     }
 }
-
 
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
