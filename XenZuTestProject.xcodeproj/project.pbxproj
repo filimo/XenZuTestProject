@@ -7,23 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0571EF12681A93B001B6569 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571EF02681A93B001B6569 /* Endpoint.swift */; };
+		F0571EF42681AC96001B6569 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571EF32681AC96001B6569 /* URLSession.swift */; };
+		F0571EF62681AE79001B6569 /* EndpointKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571EF52681AE79001B6569 /* EndpointKind.swift */; };
+		F0571EF82681AE8E001B6569 /* EndpointKinds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571EF72681AE8E001B6569 /* EndpointKinds.swift */; };
+		F0571EFA2681AEEB001B6569 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571EF92681AEEB001B6569 /* AccessToken.swift */; };
+		F0571EFD2681AFAE001B6569 /* MoviesListEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571EFC2681AFAE001B6569 /* MoviesListEndPoint.swift */; };
+		F0571F002681AFF2001B6569 /* MoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571EFF2681AFF2001B6569 /* MoviesList.swift */; };
+		F0571F032681B057001B6569 /* InvalidEndpointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571F022681B057001B6569 /* InvalidEndpointError.swift */; };
+		F0571F082681B1EA001B6569 /* MovieDetailEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571F072681B1EA001B6569 /* MovieDetailEndPoint.swift */; };
+		F0571F0A2681B206001B6569 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571F092681B206001B6569 /* MovieDetail.swift */; };
+		F0571F0F2681BEFD001B6569 /* MoviesListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571F0E2681BEFD001B6569 /* MoviesListStore.swift */; };
+		F0571F152681C03C001B6569 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571F142681C03C001B6569 /* UserSession.swift */; };
+		F0571F172681C086001B6569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571F162681C086001B6569 /* ContentView.swift */; };
+		F0571F1B2681C4DB001B6569 /* UserSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0571F1A2681C4DB001B6569 /* UserSessionStore.swift */; };
+		F05D20642681E12D001F51A1 /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D20632681E12D001F51A1 /* MovieItem.swift */; };
+		F05D20662681E262001F51A1 /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D20652681E262001F51A1 /* ModelLoader.swift */; };
+		F05D20682681E5C6001F51A1 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D20672681E5C6001F51A1 /* Publisher.swift */; };
 		F0673CF62681A25C001587FD /* XenZuTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0673CF52681A25C001587FD /* XenZuTestProjectApp.swift */; };
-		F0673CF82681A25C001587FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0673CF72681A25C001587FD /* ContentView.swift */; };
+		F0673CF82681A25C001587FD /* ContentTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0673CF72681A25C001587FD /* ContentTestView.swift */; };
 		F0673CFA2681A25F001587FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0673CF92681A25F001587FD /* Assets.xcassets */; };
 		F0673CFD2681A25F001587FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0673CFC2681A25F001587FD /* Preview Assets.xcassets */; };
 		F0673CFF2681A25F001587FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0673CFE2681A25F001587FD /* Persistence.swift */; };
 		F0673D022681A25F001587FD /* XenZuTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0673D002681A25F001587FD /* XenZuTestProject.xcdatamodeld */; };
+		F0EBBC742682061B00D1AF43 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EBBC732682061B00D1AF43 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F0571EF02681A93B001B6569 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F0571EF32681AC96001B6569 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		F0571EF52681AE79001B6569 /* EndpointKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointKind.swift; sourceTree = "<group>"; };
+		F0571EF72681AE8E001B6569 /* EndpointKinds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointKinds.swift; sourceTree = "<group>"; };
+		F0571EF92681AEEB001B6569 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		F0571EFC2681AFAE001B6569 /* MoviesListEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListEndPoint.swift; sourceTree = "<group>"; };
+		F0571EFF2681AFF2001B6569 /* MoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesList.swift; sourceTree = "<group>"; };
+		F0571F022681B057001B6569 /* InvalidEndpointError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidEndpointError.swift; sourceTree = "<group>"; };
+		F0571F072681B1EA001B6569 /* MovieDetailEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailEndPoint.swift; sourceTree = "<group>"; };
+		F0571F092681B206001B6569 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		F0571F0E2681BEFD001B6569 /* MoviesListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListStore.swift; sourceTree = "<group>"; };
+		F0571F142681C03C001B6569 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		F0571F162681C086001B6569 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0571F1A2681C4DB001B6569 /* UserSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionStore.swift; sourceTree = "<group>"; };
+		F05D20632681E12D001F51A1 /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
+		F05D20652681E262001F51A1 /* ModelLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLoader.swift; sourceTree = "<group>"; };
+		F05D20672681E5C6001F51A1 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		F0673CF22681A25C001587FD /* XenZuTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XenZuTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0673CF52681A25C001587FD /* XenZuTestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenZuTestProjectApp.swift; sourceTree = "<group>"; };
-		F0673CF72681A25C001587FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0673CF72681A25C001587FD /* ContentTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTestView.swift; sourceTree = "<group>"; };
 		F0673CF92681A25F001587FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0673CFC2681A25F001587FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0673CFE2681A25F001587FD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F0673D012681A25F001587FD /* XenZuTestProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XenZuTestProject.xcdatamodel; sourceTree = "<group>"; };
 		F0673D032681A25F001587FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EBBC732682061B00D1AF43 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +73,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0571EEE2681A899001B6569 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0673CF72681A25C001587FD /* ContentTestView.swift */,
+				F0571F162681C086001B6569 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0571EEF2681A906001B6569 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				F0571F062681B15F001B6569 /* Private */,
+				F0571EFB2681AF85001B6569 /* Public */,
+				F0571EF02681A93B001B6569 /* Endpoint.swift */,
+				F0571EF52681AE79001B6569 /* EndpointKind.swift */,
+				F0571EF72681AE8E001B6569 /* EndpointKinds.swift */,
+				F0571EF92681AEEB001B6569 /* AccessToken.swift */,
+				F0571F142681C03C001B6569 /* UserSession.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		F0571EF22681AC67001B6569 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F0571EF32681AC96001B6569 /* URLSession.swift */,
+				F05D20672681E5C6001F51A1 /* Publisher.swift */,
+				F0EBBC732682061B00D1AF43 /* DateFormatter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F0571EFB2681AF85001B6569 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F0571EFE2681AFDB001B6569 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F05D20632681E12D001F51A1 /* MovieItem.swift */,
+				F0571EFF2681AFF2001B6569 /* MoviesList.swift */,
+				F0571F092681B206001B6569 /* MovieDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0571F012681B04A001B6569 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F0571F022681B057001B6569 /* InvalidEndpointError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F0571F062681B15F001B6569 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				F0571EFC2681AFAE001B6569 /* MoviesListEndPoint.swift */,
+				F0571F072681B1EA001B6569 /* MovieDetailEndPoint.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		F0571F0D2681BEE4001B6569 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F0571F0E2681BEFD001B6569 /* MoviesListStore.swift */,
+				F0571F1A2681C4DB001B6569 /* UserSessionStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F0571F102681BF6A001B6569 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				F05D20652681E262001F51A1 /* ModelLoader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		F05D206B2681E867001F51A1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		F0673CE92681A25C001587FD = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +183,15 @@
 		F0673CF42681A25C001587FD /* XenZuTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				F05D206B2681E867001F51A1 /* Database */,
+				F0571F012681B04A001B6569 /* Error */,
+				F0571EFE2681AFDB001B6569 /* Model */,
+				F0571EF22681AC67001B6569 /* Extension */,
+				F0571EEF2681A906001B6569 /* Endpoint */,
+				F0571F102681BF6A001B6569 /* Loader */,
+				F0571F0D2681BEE4001B6569 /* Store */,
+				F0571EEE2681A899001B6569 /* View */,
 				F0673CF52681A25C001587FD /* XenZuTestProjectApp.swift */,
-				F0673CF72681A25C001587FD /* ContentView.swift */,
 				F0673CF92681A25F001587FD /* Assets.xcassets */,
 				F0673CFE2681A25F001587FD /* Persistence.swift */,
 				F0673D032681A25F001587FD /* Info.plist */,
@@ -144,10 +278,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05D20642681E12D001F51A1 /* MovieItem.swift in Sources */,
+				F0571EF82681AE8E001B6569 /* EndpointKinds.swift in Sources */,
+				F0571F082681B1EA001B6569 /* MovieDetailEndPoint.swift in Sources */,
 				F0673CFF2681A25F001587FD /* Persistence.swift in Sources */,
-				F0673CF82681A25C001587FD /* ContentView.swift in Sources */,
+				F0571F002681AFF2001B6569 /* MoviesList.swift in Sources */,
+				F0571EFA2681AEEB001B6569 /* AccessToken.swift in Sources */,
+				F0673CF82681A25C001587FD /* ContentTestView.swift in Sources */,
+				F0571F0A2681B206001B6569 /* MovieDetail.swift in Sources */,
+				F0571EF42681AC96001B6569 /* URLSession.swift in Sources */,
+				F0571F172681C086001B6569 /* ContentView.swift in Sources */,
+				F0571EF62681AE79001B6569 /* EndpointKind.swift in Sources */,
+				F0571F032681B057001B6569 /* InvalidEndpointError.swift in Sources */,
+				F05D20682681E5C6001F51A1 /* Publisher.swift in Sources */,
 				F0673D022681A25F001587FD /* XenZuTestProject.xcdatamodeld in Sources */,
+				F05D20662681E262001F51A1 /* ModelLoader.swift in Sources */,
+				F0571F1B2681C4DB001B6569 /* UserSessionStore.swift in Sources */,
+				F0EBBC742682061B00D1AF43 /* DateFormatter.swift in Sources */,
 				F0673CF62681A25C001587FD /* XenZuTestProjectApp.swift in Sources */,
+				F0571F0F2681BEFD001B6569 /* MoviesListStore.swift in Sources */,
+				F0571EFD2681AFAE001B6569 /* MoviesListEndPoint.swift in Sources */,
+				F0571F152681C03C001B6569 /* UserSession.swift in Sources */,
+				F0571EF12681A93B001B6569 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

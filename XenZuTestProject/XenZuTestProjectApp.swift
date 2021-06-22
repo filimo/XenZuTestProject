@@ -14,7 +14,8 @@ struct XenZuTestProjectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            ContentTestView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
