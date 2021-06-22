@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     @ObservedObject var store = MoviesListStore.shared
 
@@ -17,9 +16,8 @@ struct ContentView: View {
     var body: some View {
         switch store.loader?.state {
         case .loaded(let items):
-            ForEach(items.results, id: \.id) { item in
-                Text("\(item.originalTitle)")
-            }
+            MoviesListView(items: items)
+            .padding(.horizontal)
         case .none:
             EmptyView()
         case .some(.idle):
@@ -31,6 +29,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

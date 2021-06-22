@@ -20,17 +20,6 @@ struct MovieItem: Decodable, Identifiable {
         case posterPath = "poster_path"
     }
     
-//    required convenience init(from decoder: Decoder) throws {
-//        self.init(context: context)
-//
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//
-//        let timestamp = try container.decode(String.self, forKey: .timestamp)
-//        self.timestamp = DateFormatter.jsonDateFormater.date(from:timestamp)!
-//
-//        totalCount = try container.decode(Int64.self, forKey: .totalCount)
-//    }
-    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
