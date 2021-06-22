@@ -11,7 +11,7 @@ import Foundation
 extension URLSession {
     func urlRequest<K, R>(
         for endpoint: Endpoint<K, R>,
-        using requestData: K.RequestData
+        using requestData: K.RequestData = UserSessionStore.userSession.accessToken as! K.RequestData
     ) -> Result<URLRequest, Error> {
         guard let request = endpoint.makeRequest(with: requestData) else {
             return .failure(InvalidEndpointError(endpoint: endpoint))

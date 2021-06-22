@@ -18,7 +18,7 @@ class MovieDetailStore: ObservableObject {
     private var request: Result<URLRequest, Error>?
 
     func fetchMovieDetail(id: MovieDetail.ID) {
-        request = URLSession.shared.urlRequest(for: .movieDetail(withID: id), using: UserSessionStore.userSession.accessToken)
+        request = URLSession.shared.urlRequest(for: .movieDetail(withID: id))
 
         switch request {
         case .success(let request):

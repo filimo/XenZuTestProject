@@ -22,7 +22,7 @@ class MoviesListStore: ObservableObject {
     private var totalPages: Int = 1
 
     func initRequest() {
-        request = URLSession.shared.urlRequest(for: .moviesList(page: latestPage), using: UserSessionStore.userSession.accessToken)
+        request = URLSession.shared.urlRequest(for: .moviesList(page: latestPage))
 
         switch request {
         case .success(let request):
