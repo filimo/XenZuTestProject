@@ -18,7 +18,8 @@ struct MoviesListView: View {
         ScrollView {
             LazyVStack {
                 ForEach(items, id: \.id) { item in
-                    NavigationLink(destination: LazyView { MovieDetailView(id: item.id) }) {
+                    NavigationLink(destination: LazyView { MovieDetailView(id: item.id)
+                    }) {
                         itemView(item: item)
                     }
                     .onAppear {

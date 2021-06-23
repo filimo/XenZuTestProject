@@ -38,6 +38,9 @@
 		F0673CFD2681A25F001587FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0673CFC2681A25F001587FD /* Preview Assets.xcassets */; };
 		F0673CFF2681A25F001587FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0673CFE2681A25F001587FD /* Persistence.swift */; };
 		F0673D022681A25F001587FD /* XenZuTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0673D002681A25F001587FD /* XenZuTestProject.xcdatamodeld */; };
+		F0A4506D26830037003F5B73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F0A4506C26830037003F5B73 /* README.md */; };
+		F0A4507126830043003F5B73 /* 1_0_1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A4506F26830042003F5B73 /* 1_0_1_2.png */; };
+		F0A4507226830043003F5B73 /* 1_0_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A4507026830043003F5B73 /* 1_0_1_1.png */; };
 		F0EBBC742682061B00D1AF43 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EBBC732682061B00D1AF43 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		F0673CFE2681A25F001587FD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F0673D012681A25F001587FD /* XenZuTestProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XenZuTestProject.xcdatamodel; sourceTree = "<group>"; };
 		F0673D032681A25F001587FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A4506C26830037003F5B73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F0A4506F26830042003F5B73 /* 1_0_1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_0_1_2.png; sourceTree = "<group>"; };
+		F0A4507026830043003F5B73 /* 1_0_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_0_1_1.png; sourceTree = "<group>"; };
 		F0EBBC732682061B00D1AF43 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +205,8 @@
 		F0673CE92681A25C001587FD = {
 			isa = PBXGroup;
 			children = (
+				F0A4506E26830042003F5B73 /* Assets */,
+				F0A4506C26830037003F5B73 /* README.md */,
 				F0673CF42681A25C001587FD /* XenZuTestProject */,
 				F0673CF32681A25C001587FD /* Products */,
 			);
@@ -239,6 +247,15 @@
 				F0673CFC2681A25F001587FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0A4506E26830042003F5B73 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F0A4506F26830042003F5B73 /* 1_0_1_2.png */,
+				F0A4507026830043003F5B73 /* 1_0_1_1.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +315,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A4506D26830037003F5B73 /* README.md in Resources */,
 				F0673CFD2681A25F001587FD /* Preview Assets.xcassets in Resources */,
 				F0673CFA2681A25F001587FD /* Assets.xcassets in Resources */,
+				F0A4507126830043003F5B73 /* 1_0_1_2.png in Resources */,
+				F0A4507226830043003F5B73 /* 1_0_1_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -452,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
