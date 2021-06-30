@@ -9,6 +9,7 @@ import Combine
 import Foundation
 
 class MovieDetailStore: ObservableObject {
+    private init() {}
     static let shared = MovieDetailStore()
     
     @Published private var loader: ModelLoader<MovieDetail>?

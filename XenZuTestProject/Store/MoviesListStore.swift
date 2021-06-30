@@ -9,6 +9,7 @@ import Combine
 import Foundation
 
 class MoviesListStore: ObservableObject {
+    private init() {}
     static let shared = MoviesListStore()
 
     @Published var items: [MovieItem] = []

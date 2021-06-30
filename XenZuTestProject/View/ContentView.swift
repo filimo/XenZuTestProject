@@ -5,9 +5,11 @@
 //  Created by Viktor Kushnerov on 22.06.21.
 //
 
+import Resolver
 import SwiftUI
+
 struct ContentView: View {
-    @ObservedObject var store = MoviesListStore.shared
+    @InjectedObject var store: MoviesListStore
 
     var body: some View {
         NavigationView {
@@ -39,7 +41,7 @@ struct ContentView: View {
             store.nextFetchMoviesList()
         }
     }
-    
+
     @ViewBuilder
     static func posterView(posterPath: String) -> some View {
         if let url = URL(string: "https://www.themoviedb.org/t/p/w220_and_h330_face/\(posterPath)") {

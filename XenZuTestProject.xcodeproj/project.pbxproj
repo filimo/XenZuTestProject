@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,10 @@
 		F0A4506D26830037003F5B73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F0A4506C26830037003F5B73 /* README.md */; };
 		F0A4507126830043003F5B73 /* 1_0_1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A4506F26830042003F5B73 /* 1_0_1_2.png */; };
 		F0A4507226830043003F5B73 /* 1_0_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A4507026830043003F5B73 /* 1_0_1_1.png */; };
+		F0B51396268C465800457A29 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F0B51395268C465800457A29 /* Resolver */; };
+		F0B51398268C46E700457A29 /* NetworkServices+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B51397268C46E700457A29 /* NetworkServices+Injection.swift */; };
+		F0B5139A268C470900457A29 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B51399268C470900457A29 /* AppDelegate+Injection.swift */; };
+		F0B5139D268C474700457A29 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B5139C268C474700457A29 /* Resolver.swift */; };
 		F0EBBC742682061B00D1AF43 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EBBC732682061B00D1AF43 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +85,9 @@
 		F0A4506C26830037003F5B73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F0A4506F26830042003F5B73 /* 1_0_1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_0_1_2.png; sourceTree = "<group>"; };
 		F0A4507026830043003F5B73 /* 1_0_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_0_1_1.png; sourceTree = "<group>"; };
+		F0B51397268C46E700457A29 /* NetworkServices+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkServices+Injection.swift"; sourceTree = "<group>"; };
+		F0B51399268C470900457A29 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
+		F0B5139C268C474700457A29 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		F0EBBC732682061B00D1AF43 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B51396268C465800457A29 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +134,7 @@
 				F0571EF32681AC96001B6569 /* URLSession.swift */,
 				F05D20672681E5C6001F51A1 /* Publisher.swift */,
 				F0EBBC732682061B00D1AF43 /* DateFormatter.swift */,
+				F0B5139B268C472600457A29 /* Resolver */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -258,6 +267,16 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		F0B5139B268C472600457A29 /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				F0B51397268C46E700457A29 /* NetworkServices+Injection.swift */,
+				F0B51399268C470900457A29 /* AppDelegate+Injection.swift */,
+				F0B5139C268C474700457A29 /* Resolver.swift */,
+			);
+			path = Resolver;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,6 +293,9 @@
 			dependencies = (
 			);
 			name = XenZuTestProject;
+			packageProductDependencies = (
+				F0B51395268C465800457A29 /* Resolver */,
+			);
 			productName = XenZuTestProject;
 			productReference = F0673CF22681A25C001587FD /* XenZuTestProject.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +323,9 @@
 				Base,
 			);
 			mainGroup = F0673CE92681A25C001587FD;
+			packageReferences = (
+				F0B51394268C465800457A29 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = F0673CF32681A25C001587FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,8 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B5139A268C470900457A29 /* AppDelegate+Injection.swift in Sources */,
 				F05D207B26820F55001F51A1 /* MoviesListView.swift in Sources */,
 				F05D20642681E12D001F51A1 /* MovieItem.swift in Sources */,
+				F0B5139D268C474700457A29 /* Resolver.swift in Sources */,
 				F0571EF82681AE8E001B6569 /* EndpointKinds.swift in Sources */,
 				F0571F082681B1EA001B6569 /* MovieDetailEndPoint.swift in Sources */,
 				F0673CFF2681A25F001587FD /* Persistence.swift in Sources */,
@@ -354,6 +381,7 @@
 				F0571F1B2681C4DB001B6569 /* UserSessionStore.swift in Sources */,
 				F0EBBC742682061B00D1AF43 /* DateFormatter.swift in Sources */,
 				F0673CF62681A25C001587FD /* XenZuTestProjectApp.swift in Sources */,
+				F0B51398268C46E700457A29 /* NetworkServices+Injection.swift in Sources */,
 				F0571F0F2681BEFD001B6569 /* MoviesListStore.swift in Sources */,
 				F0571EFD2681AFAE001B6569 /* MoviesListEndPoint.swift in Sources */,
 				F0571F152681C03C001B6569 /* UserSession.swift in Sources */,
@@ -548,6 +576,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0B51394268C465800457A29 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0B51395268C465800457A29 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0B51394268C465800457A29 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F0673D002681A25F001587FD /* XenZuTestProject.xcdatamodeld */ = {

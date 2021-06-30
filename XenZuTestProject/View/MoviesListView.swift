@@ -5,12 +5,13 @@
 //  Created by Viktor Kushnerov on 22.06.21.
 //
 
+import Resolver
 import SwiftUI
 
 // https://www.themoviedb.org/t/p/w220_and_h330_face/z8CExJekGrEThbpMXAmCFvvgoJR.jpg
 
 struct MoviesListView: View {
-    @ObservedObject var store = MoviesListStore.shared
+    @InjectedObject var store: MoviesListStore
 
     let items: [MovieItem]
 
